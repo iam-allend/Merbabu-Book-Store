@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="8dp"
+    android:background="@drawable/cartitem"
+    android:layout_margin="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageProduk"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/namaProduk"
+            android:fontFamily="@font/jakartasans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="Nama Produk"
+            android:textSize="16dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp"
+            >
+
+            <TextView
+                android:id="@+id/qty"
+                android:fontFamily="@font/jakartasans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qty"/>
+
+            <TextView
+                android:id="@+id/space"
+                android:fontFamily="@font/jakartasans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  x  "/>
+
+            <TextView
+                android:id="@+id/hargaProduk"
+                android:fontFamily="@font/jakartasans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga Satuan"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/total"
+                android:fontFamily="@font/jakartasans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/red_main"
+                android:text="Total"/>
+
+            <TextView
+                android:id="@+id/space2"
+                android:fontFamily="@font/jakartasans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  -  "/>
+
+            <TextView
+                android:id="@+id/status"
+                android:fontFamily="@font/jakartasans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="Status"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:fontFamily="@font/jakartasans"
+        android:id="@+id/btnHapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hapus"/>
+</LinearLayout>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popupContactCard"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:layout_margin="24dp"
+    android:layout_gravity="center"
+    android:padding="24dp"
+    android:background="@android:color/white"
+    android:elevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/popup"
+        app:cardElevation="40dp"
+        android:padding="20dp"
+        android:outlineSpotShadowColor="@color/black">
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Toko Buku Merbabu"
+                android:fontFamily="@font/jakartasans"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:fontFamily="@font/jakartasans"
+                android:text="Alamat: Jl. Pandanaran No.108, Pekunden, Semarang Tengah, Kota Semarang, Jawa Tengah 50241"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:fontFamily="@font/jakartasans"
+                android:text="Telp: (024) 8319562"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

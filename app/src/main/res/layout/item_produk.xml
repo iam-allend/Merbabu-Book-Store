@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="8dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageProduk"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/category"
+            android:fontFamily="@font/jakartasans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="3dp"
+            android:layout_marginTop="-15dp"
+            android:text="Kategori"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/namaProduk"
+            android:fontFamily="@font/jakartasans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="Nama Produk"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/hargaProduk"
+            android:fontFamily="@font/jakartasans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Rp 0"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/stok"
+                android:fontFamily="@font/jakartasans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Stok"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text=" - "
+                android:textSize="13sp" />
+
+
+
+            <TextView
+                android:id="@+id/status"
+                android:fontFamily="@font/jakartasans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Status"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dikunjungi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dikunjungi: 0x"
+            android:textSize="13sp"
+            android:textColor="#999"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:fontFamily="@font/jakartasans"
+            android:id="@+id/btnKeranjang"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/keranjang"
+            android:outlineAmbientShadowColor="@color/red_main"
+            android:text="Keranjang"
+            android:padding="0dp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
